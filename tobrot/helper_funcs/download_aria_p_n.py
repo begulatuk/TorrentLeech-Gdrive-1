@@ -54,7 +54,7 @@ async def aria_start():
         f"--bt-stop-timeout={MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START}"
     )
     #
-    LOGGER.info(aria2_daemon_start_cmd)
+    #LOGGER.info(aria2_daemon_start_cmd)
     #
     process = await asyncio.create_subprocess_exec(
         *aria2_daemon_start_cmd,
